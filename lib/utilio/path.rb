@@ -20,8 +20,8 @@ module Utilio
         root(*['app', folders].flatten)
       end
     
-      def yaml_file file
-        YAML.load_file(file)
+      def yaml_file *path_to_file
+        YAML.load_file(root(*path_to_file))
       end
       
       private

@@ -4,9 +4,10 @@ module Utilio
   class Database
     class << self
     
-      def config db_file='database.yml', environment=nil
-        @config ||= Path.yaml_file(Path.root('config', db_file))
-        @config[environment] unless environment.nil?
+      # Load the configuration file from your application root
+      def config options={environment: nil, file: 'config/database.yml'}
+        config = Path.yaml_file(options[:file])
+        options[:environment].nil? ? config : config[options[:environment]]
       end
     
     end

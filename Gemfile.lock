@@ -1,0 +1,22 @@
+--- 
+hash: 79020667ba715c035ff652102ae489830ed4e6f9
+sources: 
+- Rubygems: 
+    uri: http://gemcutter.org
+specs: 
+- diff-lcs: 
+    version: 1.1.2
+- rspec-core: 
+    version: 2.0.0.beta.19
+- rspec-expectations: 
+    version: 2.0.0.beta.19
+- rspec-mocks: 
+    version: 2.0.0.beta.19
+- rspec: 
+    version: 2.0.0.beta.19
+dependencies: 
+  rspec: 
+    version: ">= 2.0.0.beta.18"
+    group: 
+    - :development
+    - :test
