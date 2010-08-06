@@ -1,4 +1,4 @@
-require File.expand_path(File.dirname(__FILE__) + '/spec_helper')
+require File.expand_path(File.join(File.dirname(__FILE__), '..', 'spec_helper'))
 
 describe Utilio::Path do
   
@@ -26,6 +26,10 @@ describe Utilio::Path do
     abs_path = File.expand_path(File.dirname(__FILE__))
     Utilio::Path.root = File.dirname(__FILE__)
     Utilio::Path.root.should == abs_path
+  end
+  
+  it "should not concatentate nil values to the root path" do
+    Utilio::Path.root(nil, 'one', nil, nil, 'two').should == File.join(fake_root, 'one', 'two')
   end
   
   it "should shortcut paths to an application's app folder" do

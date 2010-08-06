@@ -3,11 +3,21 @@ require 'utilio/path'
 module Utilio
   class Database
     class << self
+      
+      DEFAULT_OPTS = {
+        environment: nil,
+        file: 'config/database.yml'
+      }
     
       # Load the configuration file from your application root
-      def config options={environment: nil, file: 'config/database.yml'}
+      def config options={}
+        options = DEFAULT_OPTS.merge(options)
         config = Path.yaml_file(options[:file])
-        options[:environment].nil? ? config : config[options[:environment]]
+        unless options[:environment].nil? || options[:environment].empty?
+          config[options[:environment]]
+        else
+          config
+        end
       end
     
     end

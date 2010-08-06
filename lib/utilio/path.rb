@@ -13,7 +13,7 @@ module Utilio
       # Get the root path of the application, optionally passing in additional folders to be joined and expanded
       # e.g. PathUtils.root 'db', 'migrate' # => /path/to/loudmouth/db/migrate
       def root *folders
-        File.expand_path(File.join(*([app_root, folders].flatten)))
+        File.expand_path(File.join(*([app_root, folders].flatten.uniq.tap{|path| path.delete(nil) })))
       end
     
       def app *folders

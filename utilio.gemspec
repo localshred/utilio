@@ -30,6 +30,7 @@ Gem::Specification.new do |s|
      "lib/utilio.rb",
      "lib/utilio/database.rb",
      "lib/utilio/path.rb",
+     "lib/utilio/security.rb",
      "spec/data/database.yml",
      "spec/data/path.yml",
      "spec/spec_helper.rb",

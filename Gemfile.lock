@@ -1,11 +1,13 @@
 --- 
-hash: 79020667ba715c035ff652102ae489830ed4e6f9
+hash: 8c71b54c5126769ad4e8cbab25d4e9306f972fd9
 sources: 
 - Rubygems: 
     uri: http://gemcutter.org
 specs: 
 - diff-lcs: 
     version: 1.1.2
+- guid: 
+    version: 0.1.1
 - rspec-core: 
     version: 2.0.0.beta.19
 - rspec-expectations: 
@@ -15,6 +17,10 @@ specs:
 - rspec: 
     version: 2.0.0.beta.19
 dependencies: 
+  guid: 
+    version: ">= 0"
+    group: 
+    - :default
   rspec: 
     version: ">= 2.0.0.beta.18"
     group: 

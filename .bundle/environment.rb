@@ -174,11 +174,12 @@ end
 module Bundler
   ENV_LOADED   = true
   LOCKED_BY    = '0.9.26'
-  FINGERPRINT  = "79020667ba715c035ff652102ae489830ed4e6f9"
+  FINGERPRINT  = "8c71b54c5126769ad4e8cbab25d4e9306f972fd9"
   HOME         = '/Users/bj/.rvm/gems/ruby-1.9.2-rc2/bundler'
-  AUTOREQUIRES = {:development=>[["rspec", false]], :test=>[["rspec", false]]}
+  AUTOREQUIRES = {:default=>[["guid", false]], :development=>[["rspec", false]], :test=>[["rspec", false]]}
   SPECS        = [
         {:name=>"diff-lcs", :load_paths=>["/Users/bj/.rvm/gems/ruby-1.9.2-rc2/gems/diff-lcs-1.1.2/lib"], :loaded_from=>"/Users/bj/.rvm/gems/ruby-1.9.2-rc2/specifications/diff-lcs-1.1.2.gemspec"},
+        {:name=>"guid", :load_paths=>["/Users/bj/.rvm/gems/ruby-1.9.2-rc2/gems/guid-0.1.1/lib"], :loaded_from=>"/Users/bj/.rvm/gems/ruby-1.9.2-rc2/specifications/guid-0.1.1.gemspec"},
         {:name=>"rspec-core", :load_paths=>["/Users/bj/.rvm/gems/ruby-1.9.2-rc2/gems/rspec-core-2.0.0.beta.19/lib"], :loaded_from=>"/Users/bj/.rvm/gems/ruby-1.9.2-rc2/specifications/rspec-core-2.0.0.beta.19.gemspec"},
         {:name=>"rspec-expectations", :load_paths=>["/Users/bj/.rvm/gems/ruby-1.9.2-rc2/gems/rspec-expectations-2.0.0.beta.19/lib"], :loaded_from=>"/Users/bj/.rvm/gems/ruby-1.9.2-rc2/specifications/rspec-expectations-2.0.0.beta.19.gemspec"},
         {:name=>"rspec-mocks", :load_paths=>["/Users/bj/.rvm/gems/ruby-1.9.2-rc2/gems/rspec-mocks-2.0.0.beta.19/lib"], :loaded_from=>"/Users/bj/.rvm/gems/ruby-1.9.2-rc2/specifications/rspec-mocks-2.0.0.beta.19.gemspec"},
