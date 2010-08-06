@@ -1,4 +1,4 @@
-= sinatra_utils
+= utilio
 
 Description goes here.
 
