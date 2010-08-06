@@ -34,7 +34,8 @@ Gem::Specification.new do |s|
      "spec/data/path.yml",
      "spec/spec_helper.rb",
      "spec/utilio_database_spec.rb",
-     "spec/utilio_path_spec.rb"
+     "spec/utilio_path_spec.rb",
+     "utilio.gemspec"
   ]
   s.homepage = %q{http://www.rand9.com}
   s.rdoc_options = ["--charset=UTF-8"]
