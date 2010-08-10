@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{utilio}
-  s.version = "0.0.1"
+  s.version = "0.0.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["BJ Neilsen"]
-  s.date = %q{2010-08-06}
+  s.date = %q{2010-08-10}
   s.description = %q{}
   s.email = %q{bj.neilsen@gmail.com}
   s.extra_rdoc_files = [
@@ -27,15 +27,17 @@ Gem::Specification.new do |s|
      "README.md",
      "Rakefile",
      "VERSION",
+     "autotest/discover.rb",
      "lib/utilio.rb",
      "lib/utilio/database.rb",
      "lib/utilio/path.rb",
      "lib/utilio/security.rb",
-     "spec/data/database.yml",
-     "spec/data/path.yml",
      "spec/spec_helper.rb",
-     "spec/utilio_database_spec.rb",
-     "spec/utilio_path_spec.rb",
+     "spec/utilio/config/database.yml",
+     "spec/utilio/data/path.yml",
+     "spec/utilio/database_spec.rb",
+     "spec/utilio/path_spec.rb",
+     "spec/utilio/security_spec.rb",
      "utilio.gemspec"
   ]
   s.homepage = %q{http://www.rand9.com}
@@ -45,8 +47,9 @@ Gem::Specification.new do |s|
   s.summary = %q{A general collection of application utilities for dealing with paths and active_record}
   s.test_files = [
     "spec/spec_helper.rb",
-     "spec/utilio_database_spec.rb",
-     "spec/utilio_path_spec.rb"
+     "spec/utilio/database_spec.rb",
+     "spec/utilio/path_spec.rb",
+     "spec/utilio/security_spec.rb"
   ]
 
   if s.respond_to? :specification_version then
