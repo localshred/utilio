@@ -1,28 +1,27 @@
---- 
-hash: 8c71b54c5126769ad4e8cbab25d4e9306f972fd9
-sources: 
-- Rubygems: 
-    uri: http://gemcutter.org
-specs: 
-- diff-lcs: 
-    version: 1.1.2
-- guid: 
-    version: 0.1.1
-- rspec-core: 
-    version: 2.0.0.beta.19
-- rspec-expectations: 
-    version: 2.0.0.beta.19
-- rspec-mocks: 
-    version: 2.0.0.beta.19
-- rspec: 
-    version: 2.0.0.beta.19
-dependencies: 
-  guid: 
-    version: ">= 0"
-    group: 
-    - :default
-  rspec: 
-    version: ">= 2.0.0.beta.18"
-    group: 
-    - :development
-    - :test
+PATH
+  remote: .
+  specs:
+    utilio (0.0.3)
+
+GEM
+  remote: http://rubygems.org/
+  specs:
+    diff-lcs (1.1.2)
+    rspec (2.0.0.rc)
+      rspec-core (= 2.0.0.rc)
+      rspec-expectations (= 2.0.0.rc)
+      rspec-mocks (= 2.0.0.rc)
+    rspec-core (2.0.0.rc)
+    rspec-expectations (2.0.0.rc)
+      diff-lcs (>= 1.1.2)
+    rspec-mocks (2.0.0.rc)
+      rspec-core (= 2.0.0.rc)
+      rspec-expectations (= 2.0.0.rc)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  bundler (>= 1.0.0.rc.5)
+  rspec (>= 2.0.0.beta.rc)
+  utilio!

@@ -1,13 +1,10 @@
-require 'guid'
 require 'base64'
 require 'openssl'
 
 module Utilio
   class Security
-  
-  
     class << self
-      
+
       def hash_string(value)
         Security.secure_digest( value )
       end
@@ -16,10 +13,6 @@ module Utilio
         Digest::SHA2.hexdigest(args.flatten.join('--'))
       end
 
-      def generate_guid!
-        Guid.new.to_s
-      end
-      
       def encrypt string
         c = cipher
         c.encrypt
@@ -33,24 +26,19 @@ module Utilio
         c = cipher
         c.decrypt
         c.key = key
-
         c.update(Base64.decode64("#{ string }\n")) + c.final
-
       end  
-      
-      private
 
-        def cipher
-          OpenSSL::Cipher::Cipher.new("aes-256-ecb")
-        end
+    private
 
-        def key
-          @key ||= "--thisIs0urKeyF0rEncryptionF0rPersona--"[0,56]
-        end
-    
+      def cipher
+        OpenSSL::Cipher::Cipher.new("aes-256-ecb")
+      end
+
+      def key
+        @key ||= "--thisIs0urKeyF0rEncryptionF0rPersona--"[0,56]
+      end
+
     end
-    
-    
-    
   end
 end
