@@ -5,8 +5,8 @@ module Utilio
     class << self
       
       DEFAULT_OPTS = {
-        environment: nil,
-        file: 'config/database.yml'
+        :environment => nil,
+        :file => 'config/database.yml'
       }
     
       # Load the configuration file from your application root

@@ -10,7 +10,7 @@ describe Utilio::Database do
   
   it "should allow you to load a db configuration" do
     lambda {
-      Utilio::Database.config(file: config_file).should_not be_nil
+      Utilio::Database.config(:file => config_file).should_not be_nil
     }.should_not raise_error
   end
   
@@ -20,11 +20,11 @@ describe Utilio::Database do
   
   it "should load the correct env data" do
     %w( development test production ).each do |env|
-      Utilio::Database.config(environment: env)['database'].should == env
+      Utilio::Database.config(:environment => env)['database'].should == env
     end
     
     %w( bogus not_there ).each do |env|
-      Utilio::Database.config(environment: env).should be_nil
+      Utilio::Database.config(:environment => env).should be_nil
     end
   end
   

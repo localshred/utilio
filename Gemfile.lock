@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    utilio (0.0.3)
+    utilio (0.0.4)
 
 GEM
   remote: http://rubygems.org/
@@ -23,5 +23,5 @@ PLATFORMS
 
 DEPENDENCIES
   bundler (>= 1.0.0.rc.5)
-  rspec (>= 2.0.0.beta.rc)
+  rspec (>= 2.0.0.rc)
   utilio!

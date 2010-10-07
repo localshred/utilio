@@ -16,7 +16,7 @@ Gem::Specification.new do |s|
   s.rubyforge_project         = 'utilio'
 
   s.add_development_dependency 'bundler', '>= 1.0.0.rc.5'
-	s.add_development_dependency 'rspec', '>= 2.0.0.beta.rc'
+	s.add_development_dependency 'rspec', '>= 2.0.0.rc'
 
   s.files        = `git ls-files`.split("\n")
   s.require_path = 'lib'
